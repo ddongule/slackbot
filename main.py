@@ -2,15 +2,8 @@ from rtmbot import RtmBot
 from rtmbot.core import Plugin
 
 import secret
+import chatlogic
 
-def answer(text):
-    if "민경" in text:
-        reply = "불렀어?"
-    elif "주사위" == text:
-        reply = str(random.randint(1,6))
-    else:
-        reply = None
-    return reply
 
     # if "똥글" in data["text"]:
     #     self.outputs.append([data["channel"], "세계최강귀요미가 맞다."])
