@@ -1,5 +1,4 @@
 [
-  "test.py::test_should_answer_when_called",
-  "test.py::test_roll_a_die",
-  "test.py::test_do_nothing_for_unknown_patterns"
+  "test.py::test_insert_coin",
+  "test.py::test_change"
 ]

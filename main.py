@@ -19,8 +19,14 @@ import chatlogic
 class HelloPlugin(Plugin):
     def process_message(self, data):
         reply = answer(data["text"])
+        if not text.startswith("민경"):
+            return None
+
+        reply = chatlogic.answer(text[3:])
         if reply is not None:
-            self.outputs.append([data["channel"],reply])
+            self.outputs.append([data["channel"], "[민경]" + reply])
+        # if reply is not None:
+            # self.outputs.append([data["channel"],reply])
 
 
 
