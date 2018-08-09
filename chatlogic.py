@@ -1,3 +1,5 @@
+import random
+
 def answer(text):
     if "민경" in text:
         reply = "불렀어?"
